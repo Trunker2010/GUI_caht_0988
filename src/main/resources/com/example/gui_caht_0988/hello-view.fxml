@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_caht_0988.HelloController">
+    <children>
+        <VBox layoutX="12.0" layoutY="12.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+            <children>
+                <TextArea fx:id="textArea" editable="false" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <opaqueInsets>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </TextArea>
+                <HBox fx:id="input_msg_box" alignment="TOP_CENTER" cacheShape="false" disable="true">
+                    <children>
+                        <TextField fx:id="textField" onAction="#send" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                            </padding>
+                        </TextField>
+                        <Button fx:id="snd_btn" onMouseClicked="#send" text="Отправить" HBox.hgrow="ALWAYS">
+                            <padding>
+                                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets left="12.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="12.0" top="12.0" />
+                    </padding>
+                </HBox>
+                <VBox alignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="12.0" />
+                    </VBox.margin>
+                    <children>
+                        <Button fx:id="cnt_btn" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#connect" text="Подключиться" textAlignment="CENTER" translateY="1.0" VBox.vgrow="ALWAYS" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+    </padding>
+</AnchorPane>
